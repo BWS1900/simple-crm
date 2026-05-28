@@ -29,3 +29,24 @@ export function cleanCompany(value: string): string {
 export function cleanNotes(value: string): string {
   return value.trim().slice(0, 500);
 }
+
+export type Deal = {
+  id: string;
+  name: string;
+  stage: string;
+  value: string;
+  contactId: string;
+  ownerId: string;
+  createdAt: string;
+  updatedAt: string;
+};
+
+export type Activity = {
+  id: string;
+  type: string;
+  description: string;
+  contactId: string;
+  ownerId: string;
+  createdAt: string;
+  updatedAt: string;
+};
